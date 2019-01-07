@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:AnalizorLL1"
         mc:Ignorable="d"
         Title="LL(1) Grammar Generator" Height="500" Width="800"
-        Icon="C:\Users\Cosmin\source\repos\AnalizorLL1\AnalyzeTrace_16x.png"
         Background="#333">
+        <!--"C:\Users\Cosmin\source\repos\AnalizorLL1\AnalizorLL1\Resources\AnalyzeTrace_16x.png"-->
     <Border Padding="10">
         <Grid>
             <Grid.RowDefinitions>

@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:AnalizorLL1"
         mc:Ignorable="d"
         Title="Grammar C# Code" Height="450" Width="800"
-        Icon="C:\Users\Cosmin\source\repos\AnalizorLL1\Code_16x.png"
         Background="#333">
+        <!--Icon="C:\Users\Cosmin\source\repos\AnalizorLL1\AnalizorLL1\Resources\Code_16x.png"-->
     <Grid>
         <TextBox Margin="20" Padding="2"
                  x:Name="CodeTextBox" 
