@@ -1,0 +1,21 @@
+﻿S
+S A
+a b c d
+2
+S:A a|b
+A:A c|S d|ε
+
+S:A a
+S:b
+A:A c
+A:A a d
+A:b d
+A:ε
+
+S:A a
+S:b
+A:b d A'
+A:A'
+A':c A'
+A':a d A' 
+A':ε

@@ -1,0 +1,8 @@
+I
+I E F L
+if then ( ) else repeat until = < <= i ,
+4
+I:if E then ( I ) else ( I )|if E then ( I )|repeat I until E|F = F
+E:F < F|F <= F
+F:i|i ( L )
+L:i|L , i

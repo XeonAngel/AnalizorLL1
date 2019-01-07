@@ -1,0 +1,78 @@
+﻿<Window x:Class="AnalizorLL1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AnalizorLL1"
+        mc:Ignorable="d"
+        Title="LL(1) Grammar Generator" Height="500" Width="800"
+        Icon="C:\Users\Cosmin\source\repos\AnalizorLL1\AnalyzeTrace_16x.png"
+        Background="#333">
+    <Border Padding="10">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="Open_File" Content="Select Grammar"
+                        Click="Open_File_Click"
+                        Grid.Column="0"
+                        Margin="60 20"/>
+
+                <Button x:Name="Modify_Grammar" Content="Modify Grammar"
+                        Click="Modify_Grammar_Click" 
+                        Grid.Column="1"
+                        Margin="60 20"/>
+
+                <Button x:Name="CheckIfLL1" Content="Is it LL1?"
+                        Click="CheckIfLL1_Click" 
+                        Grid.Column="2"
+                        Margin="60 20"/>
+            </Grid>
+            
+            <Grid Grid.Row="1" Margin="0 10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBox x:Name="Grammar_TextBox" Margin="0 0 10 0"
+                    Background="#bbb " IsReadOnly="True" Padding="2" 
+                    Grid.Column="0"/>
+                <TextBox x:Name="ModifiedGrammar_TextBox" Margin="0 0 10 0"
+                    Background="#bbb " IsReadOnly="True" Padding="2"
+                    Grid.Column="1"/>
+                <TextBox x:Name="First_Follow_TextBox" Margin="0 0 10 0"
+                    Background="#bbb " IsReadOnly="True"  Padding="2"
+                    Grid.Column="2"/>
+            </Grid>
+
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="Complie_Button" Content="Compile"
+                            Click="Complie_Button_Click" 
+                            Grid.Column="0"
+                            Margin="60 20"/>
+
+                <Button x:Name="RunProgram_Button" Content="Run"
+                            Click="RunProgram_Button_Click"
+                            Grid.Column="1"
+                            Margin="60 20"/>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

@@ -1,0 +1,8 @@
+﻿E
+E T F L
++ - * / a ( ) ,
+4
+E:E + T|E - T|T
+T:T * F|T / F|F
+F:a|a ( L )|( E )
+L:E|E , L

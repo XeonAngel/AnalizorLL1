@@ -1,0 +1,23 @@
+E
+E T F
++ * id ( )
+3
+E:E + T|T
+T:T * F|F
+F:id|( E )
+
+E:E + T 
+E:T
+T:T * F 
+T:F
+F:id
+F:( E )
+
+E 	: 	T E'
+E' 	: 	+ T E'  
+E'  :   ε
+T 	: 	F T'
+T' 	: 	* F T'  
+T   :   ε
+F 	: 	( E )  
+F   :   id

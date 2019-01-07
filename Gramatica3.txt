@@ -1,0 +1,11 @@
+﻿A
+A B
+a b c
+7
+A:a b a
+A:a c
+A:a b c
+A:A a
+B:b a
+B:b c a
+B:B b c
